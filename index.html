@@ -28,6 +28,16 @@
         flex-direction: column;
       }
 
+      .rowInput {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row; 
+        gap: 20px; 
+        margin-top: 60px;  
+        font-size: 2rem;    
+      }
+
       .container {
         background-color: rgb(164, 170, 175);
         width: 80%;        
@@ -35,30 +45,35 @@
         padding: 20px;
       }
 
+      input {
+        height: 60px;
+        width: 90px;
+      }
+
   </style>
 </head>
 <body>
 
   <div class="container">
-    <div>
-      <span>
-        Day
-      </span>
-      <input type="text">
-    </div>
-
-     <div>
-      <span>
-        Month
-      </span>
-      <input type="text">
-    </div>
-
-     <div>
-      <span>
-        Year
-      </span>
-      <input type="text">
+    <div class="rowInput">
+      <div class="">
+        <span>
+          Day
+        </span>
+        <input type="text">
+      </div>
+       <div>
+        <span>
+          Month
+        </span>
+        <input type="text">
+      </div>
+       <div>
+        <span>
+          Year
+        </span>
+        <input type="text">
+      </div>
     </div>
     
   </div> 
